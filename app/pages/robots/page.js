@@ -3,20 +3,14 @@ import Image from "next/image";
 import { PageHeader } from "@/components/header/PageHeader";
 import { getEmployees } from "@/lib/firebase/getEmployees";
 import CardTemplate from "@/components/card/CardTemplate";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/navbar";
 
 async function EmployeesPage() {
   const robots = await getEmployees();
   const values = Object.values(robots);
 
-
-
   return (
     <>
-      <PageHeader
-        title="WorkerBots!"
-        tagline="Need a Robot for a specific speacilty? Well look no further!"
-      />
       <main>
         <div className="flex flex-wrap justify-evenly">
           {values.map((robot) => (
