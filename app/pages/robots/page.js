@@ -3,7 +3,6 @@ import Image from "next/image";
 import { PageHeader } from "@/components/header/PageHeader";
 import { getEmployees } from "@/lib/firebase/getEmployees";
 import CardTemplate from "@/components/card/CardTemplate";
-import Navbar from "@/components/navbar";
 
 async function EmployeesPage() {
   const robots = await getEmployees();
