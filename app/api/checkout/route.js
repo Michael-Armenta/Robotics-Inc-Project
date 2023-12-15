@@ -24,7 +24,6 @@ async function POST(request) {
     automatic_tax: { enabled: true },
   });
 
-
   // redirect(checkoutSession.url)
   return Response.redirect(checkoutSession.url);
 }
