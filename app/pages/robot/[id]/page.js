@@ -1,5 +1,6 @@
 import { getEmployees } from "@/lib/firebase/getEmployees";
 import { Button } from "@mui/material";
+import { CheckoutForm } from "@/components/CheckoutForm";
 
 async function getEmployee(id) {
   const payload = await getEmployees();
@@ -69,9 +70,7 @@ export default async function EmployeePage({ params }) {
                       Available:{" "}
                       {employee.available == true ? "Available" : "Unavailable"}
                     </p>
-                    <Button>
-                      <p>Buy Now</p>
-                    </Button>
+                    <CheckoutForm id={employee.prod_id} price={employee.price}/>             
                   </div>
                 </div>
               </div>
