@@ -1,21 +1,25 @@
- export default function Cancel ( {children}){
-    return (
-        <header className="  max-w-lg  mx-auto     items-center mt-28">
-    
-           <div className="text-center ">
-         
-           
-           <h1 className="bg-rose-500 rounded-lg text-sm  mb-5 w-fit mx-auto  px-4 py-1 text-red-50 font-medium"> Transaction Canceled</h1> 
-           <p className="px-4  mb-10 text-center ">The payment was declined by your bank.  
-            </p>
-     
-            <p className="text-lime-500 text-lg  font-medium block underline">return to the store?</p> 
-           </div>
-     </header>
-    )
-        
- }
-
-
-
- 
+export default function Cancel({ children }) {
+  return (
+    <>
+      <div className="relative py-16 bg-blueGray-200 h-100">
+        <div className="text-center pt-28">
+          <section className="relative py-16 bg-blueGray-200">
+            <h1 className="text-xl mb-5 w-fit mx-auto px-4 py-1 text-black font-large">
+              Transaction Canceled
+            </h1>
+            <div className="container mx-auto px-4">
+              <p className="px-4 text-center">
+                The transaction has been canceled.
+              </p>
+            </div>
+            <a href="/">
+              <button className="rounded bg-blue-900 p-1 mt-10">
+                Return to Home Page
+              </button>
+            </a>
+          </section>
+        </div>
+      </div>
+    </>
+  );
+}

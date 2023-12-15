@@ -10,6 +10,11 @@ export default function Success(props) {
             <div className="container mx-auto px-4">
               <p className="px-4 text-center">Thank you for your purchase</p>
             </div>
+            <a href="/pages/robots">
+              <button className="rounded bg-blue-900 p-1 mt-10">
+                Return to store
+              </button>
+            </a>
           </section>
         </div>
       </div>

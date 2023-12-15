@@ -20,7 +20,7 @@ async function POST(request) {
       },
     ],
     success_url: `${headers().get("origin")}/success`,
-    cancel_url: `${headers().get("origin")}`,
+    cancel_url: `${headers().get("origin")}/canceled`,
     automatic_tax: { enabled: true },
   });
 
